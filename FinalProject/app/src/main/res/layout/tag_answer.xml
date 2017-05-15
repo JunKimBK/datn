@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        style="@style/tag_answer_close"
+        android:layout_width="@dimen/tag_size"
+        android:layout_height="@dimen/tag_size" />
+
+    <TextView
+        android:id="@+id/answer_tag"
+        style="@style/tag_answer"
+        android:layout_width="@dimen/tag_size"
+        android:layout_height="@dimen/tag_size"
+        android:visibility="invisible" />
+
+</FrameLayout>

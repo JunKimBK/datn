@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="titleName"
+        android:textAlignment="center"
+        android:textColor="#FFF0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/tvYourTitle"
+        android:layout_alignEnd="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="20dp"
+        android:textColor="#FFF0F8FF"
+        android:textAlignment="center"
+        android:text="You have 5 questions and 30s to answer this question."
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/titleQuestion"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:background="@drawable/vienbutton"
+        android:onClick="ChooseTypeReviewing"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvYourTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="You choose title "
+        android:textColor="#FFF0F8FF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

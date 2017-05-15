@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="titleQuestion"
+        android:textAlignment="center"
+        android:textColor="#FFF0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="71dp"
+        android:layout_alignEnd="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart" />
+
+    <TextView
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleQuestion"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF0F8FF"
+        android:layout_marginTop="73dp"
+        android:id="@+id/score_id" />
+
+    <TextView
+        android:text="Your Score"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#FFF0F8FF"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnStart"
+        android:background="@drawable/vienbutton"
+        android:onClick="StartGameFlashCard"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/score_id"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Content of Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/textView"
+        android:textColor="#FFF0F8FF"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="High Score"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/highscore_btn"
+        android:background="@drawable/vienbutton"
+        android:onClick="StartGameFlashCard"
+        android:layout_below="@+id/btnStart"
+        android:layout_alignStart="@+id/textView2" />
+
+</RelativeLayout>

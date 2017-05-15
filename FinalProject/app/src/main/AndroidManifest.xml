@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.votungdh.learnjapanese.gdg.ninja">
+
+    <compatible-screens>
+
+        <!-- all normal size screens -->
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+    </compatible-screens>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/samurai"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".util.App"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.StartActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.GameActivity" />
+        <activity android:name=".ui.CustomGameActivity" />
+        <activity android:name=".ui.CreateCustomGameActivity" />
+        <activity android:name=".ui.HighScoreActivity" />
+        <activity android:name=".ui.OptionActivity" />
+        <activity android:name=".croplib.CropActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_id" />
+
+        <activity
+            android:name=".ui.HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="c2e8f6a06e960bd092711d1a109760662267b1e1" />
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ninja.gdg.learnjapanese.votungdh.example.com.finalproject">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <compatible-screens>
+
+        <!-- all normal size screens -->
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+    </compatible-screens>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ninja Japanese"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:label">
+        <activity android:name="ninja.gdg.learnjapanese.votungdh.example.com.finalproject.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".title.ChooseTitleActitvity"></activity>
+        <activity android:name=".listening.ListeningActivity"></activity>
+        <activity android:name=".review.ChooseTypeReviewActivity"></activity>
+        <activity android:name=".review.ReviewActivity"></activity>
+        <activity android:name=".youtube.PlayerActivity"></activity>
+        <activity android:name=".youtube.YoutubeMainActivity"></activity>
+        <activity android:name=".game.ChooseTypeGameActivity"></activity>
+        <activity android:name=".game.FlashcardMainActivity"></activity>
+        <activity android:name=".game.ChooseCorrectPictureActivity"></activity>
+        <activity android:name=".review.ShowScoreActivity"></activity>
+        <activity android:name=".game.DrawWordActivity"></activity>
+        <activity android:name=".game.HighScoreActivity"></activity>
+        <activity android:name=".game.catchword.CatchWordActivity"></activity>
+        <activity android:name=".game.catchword.PlayActivity"></activity>
+
+    </application>
+
+</manifest>

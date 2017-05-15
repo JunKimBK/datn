@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical">
+
+        <TextView
+        android:text="Menu Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="40dp"
+        android:textColor="#FFF0F8FF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:id="@+id/btnFlashCard"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="FLASH CARD"
+        android:textSize="15dp"
+        android:background="@drawable/vienbutton"
+        android:onClick="ChooseTypeGame"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:text="CATCH WORD"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/vienbutton"
+        android:id="@+id/btnCatchWord"
+        android:textSize="15dp"
+        android:onClick="ChooseTypeGame"
+        android:layout_alignTop="@+id/btnFlashCard"
+        android:layout_alignStart="@+id/btnFlashCard"
+        android:layout_marginTop="120dp" />
+
+    <Button
+        android:text="Draw Word"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="15dp"
+        android:background="@drawable/vienbutton"
+        android:id="@+id/btnDrawWord"
+        android:onClick="ChooseTypeGame"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/btnCatchWord"
+        android:layout_alignStart="@+id/btnCatchWord" />
+
+</RelativeLayout>

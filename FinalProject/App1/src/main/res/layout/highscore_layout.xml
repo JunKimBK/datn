@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+
+    <TextView
+        android:text="High Score"
+        android:textSize="40dp"
+        android:textColor="#FFF0F8FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="137dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/highscorebtn"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:id="@+id/highscoretv"
+        android:textColor="#FFF0F8FF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/vienbutton"
+        android:onClick="onBackPresent"
+        android:textSize="20dp"
+        android:layout_marginTop="57dp"
+        android:id="@+id/highscorebtn"
+        android:layout_below="@+id/highscoretv"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

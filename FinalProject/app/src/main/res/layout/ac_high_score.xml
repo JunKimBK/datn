@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_choose_from_galary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+    android:layout_width="match_parent"
+        android:layout_height="@dimen/quest_image_button_share_height"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/btn_share_facebook"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/quest_image_button_share_height"
+        android:layout_weight="1"
+        android:background="@color/btn_facebook"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/ic_facebook" />
+    <ImageView
+        android:id="@+id/btn_share_google"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/quest_image_button_share_height"
+        android:layout_weight="1" android:background="@color/btn_google"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/ic_google" />
+</LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_app_color"
+    android:gravity="center" android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView style="@style/congratulation_text"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:layout_margin="30dp"
+            android:text="@string/txt_high_score"
+            android:id="@+id/textView" />
+
+        <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_score"
+    android:gravity="center"
+    android:padding="30dp">
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="56sp" />
+</FrameLayout>
+    <TextView
+        android:id="@+id/txt_title_navi"
+        style="@style/nomal_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="0dp" />
+    <LinearLayout
+    android:id="@+id/place_holder"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txt_categories_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+</LinearLayout>
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/next_question"
+        android:contentDescription="@android:string/ok"
+        android:padding="5dp"
+        android:src="@drawable/trophy1" />
+</LinearLayout>
+</RelativeLayout>

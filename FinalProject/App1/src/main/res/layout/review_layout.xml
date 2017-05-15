@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/tbrAsk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbrTextTitle"
+        android:layout_marginTop="3dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the picture? "
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <RelativeLayout
+        android:id="@+id/relatFlashRv"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbrAsk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/vienanh"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hinhnentrang1" />
+
+            <TextView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgFrontRv"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/vienanh"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hinhnentoto" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rltansswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:layout_below="@+id/relatFlashRv"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:text="Choose your answer: "
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:id="@+id/textView4"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <TableRow
+        android:id="@+id/tbrTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your title: "
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvTitleRv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Title "
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2" />
+
+    </TableRow>
+
+    <TextView
+        android:text="Time:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_above="@+id/tbrAsk"
+        android:textColor="#000"
+        android:layout_alignEnd="@+id/relatFlashRv"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:text="60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_above="@+id/tbrAsk"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000"
+        android:id="@+id/time_review" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rltansswer"
+        android:layout_above="@+id/btnSubmit">
+
+        <RadioGroup
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:text="RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:id="@+id/rbAnswer1" />
+
+            <RadioButton
+                android:text="RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:id="@+id/rbAnswer2" />
+
+            <RadioButton
+                android:text="RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:id="@+id/rbAnswer3" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/vienbutton"
+        android:onClick="onCLickView"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
